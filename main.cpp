@@ -115,7 +115,7 @@ string courseSelect()
 
         do                                          //allows user to select course to add to student file from a list of courses in course file
         {
-            cout << "Select Course You Would Like To Add (input number to the left of the chosen course):\n";
+            cout << "Select Course You Would Like To Add (input number from the left of the chosen course):\n";
             cin >> count;
 
             if(count < 1 || count > length)
@@ -620,7 +620,7 @@ int main()
 
                 if (y == 2)
                 {
-                    cout << "Listing Course..." << endl;
+                    cout << "Listing Courses..." << endl;
                     listFiles(2);
                 }
 
