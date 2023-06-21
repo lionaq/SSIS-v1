@@ -1,9 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include<string.h>
+#include <string.h>
 #include <vector>
-#include <bits/stdc++.h>
-
 //ACLO, ROMEO GIULLANO R.  2021-0035
 
 using namespace std;
@@ -282,7 +280,7 @@ void deleteCourse()
 
     while (getline(courseOrig, line))           //checks if course inputted by user is stored in course file
     {
-        if (line.find(courseToDel) == string::npos)
+        if (line.find(courseToDel + " ") == string::npos)
         {
             courseNew << line << endl;
         }
